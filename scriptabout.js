@@ -1,19 +1,5 @@
 // ----------------------
-// 1. Floating Header Animation on Scroll
-// ----------------------
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.style.background = "rgba(255, 255, 255, 0.85)";
-    header.style.backdropFilter = "blur(8px)";
-    header.style.transition = "0.3s ease";
-  } else {
-    header.style.background = "transparent";
-    header.style.backdropFilter = "none";
-  }
-});
 
-// ----------------------
 // 2. Feedback Button Popup
 // ----------------------
 const rateBtn = document.querySelector(".rate-btn");
@@ -38,16 +24,7 @@ rateBtn.addEventListener("click", () => {
   };
 });
 
-// ----------------------
-// 3. Floating Button Scroll-to-Top
-// ----------------------
-const floatingNav = document.querySelector(".floating-nav");
-floatingNav.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
 
-// ----------------------
 // 4. Typing Effect for Tagline
 // ----------------------
 const tagline = document.querySelector(".tagline");
