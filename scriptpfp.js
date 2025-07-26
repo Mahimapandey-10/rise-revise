@@ -83,4 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
         genderSelect.value = data.gender;
         dobInput.value = data.dob;
     });
+});const deleteBtn = document.getElementById("deleteProfile");
+
+// Delete Profile
+deleteBtn.addEventListener("click", function () {
+    if (confirm("Are you sure you want to delete your profile?")) {
+        localStorage.removeItem("profileData");
+        profileDisplay.style.display = "none";
+        form.style.display = "block";
+
+        // Clear form fields
+        form.reset();
+        alert("Profile deleted successfully!");
+    }
 });
+

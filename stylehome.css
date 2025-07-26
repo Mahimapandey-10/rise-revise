@@ -285,7 +285,8 @@ body.homepage{
 }
 
 .navbar {
-  margin-top: 90px; /* Push navbar below the logo */
+  margin-top: 100px;
+  padding-left: 150px;
 }
 
 .navbar ul {

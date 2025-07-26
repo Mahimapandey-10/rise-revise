@@ -115,7 +115,7 @@ button:hover {
   animation: fadeIn 2s ease-in;
 }
 
-/* Optional animation for soft entry */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 0.9; transform: translateY(0); }

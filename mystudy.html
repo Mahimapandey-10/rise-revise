@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rise & Revise - Advanced Notes</title>
+<link rel="stylesheet" href="mystudy.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>📝 My Notes</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search notes...">
+            <button id="darkModeBtn">🌙 Dark Mode</button>
+            <button id="downloadBtn">⬇ Export Notes</button>
+        </div>
+    </header>
+
+    <div class="add-note-section">
+        <textarea id="noteInput" placeholder="Write your note..."></textarea>
+        <div class="options">
+            <select id="colorSelect">
+                <option value="#fff89a">Yellow</option>
+                <option value="#c3f0ca">Green</option>
+                <option value="#add8e6">Blue</option>
+                <option value="#ffc1cc">Pink</option>
+            </select>
+            <button id="addNoteBtn">+ Add Note</button>
+        </div>
+    </div>
+
+    <div id="notesContainer" class="notes-container"></div>
+    <a href="index.html" class="floating-nav">🏠</a>
+</div>
+<script src="scriptmystudy.js"></script>
+</body>
+</html>
