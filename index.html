@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise & Revise</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="icon" type="img/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+   
+
+
+</head>
+<body class="homepage">
+  <header class="header">
+  <div class="header-container">
+  <a href="index.html" class="logo-wrapper">
+  <img src="logo.png" alt="Rise & Revise Logo" class="site-logo">
+</a>
+
+    
+    
+    
+            
+        <!--navigation bar-->
+        <nav>
+            <ul class="navbar">
+            <!-- <li><a href="#Home">
+                <img src="https://e7.pngegg.com/pngimages/322/368/png-clipart-white-house-illustration-home-page-computer-icons-website-world-wide-web-blue-home-page-icon-miscellaneous-trademark-thumbnail.png"  style="vertical-align: middle;"     width="30px" height="30px"><b>HOME</b></a></li> -->
+            
+                <li><a href="planner.html"><b>PLANNER</b></a></li>
+                <li><a href="journal.html"><b>JOURNAL</b></a></li>
+                        <li><a href="flashcard.html"><b>FLASHCARDS</b></a></li>
+                        <li><a href="profile.html"><b>MY PROFILE</b></a></li>
+                        <li><a href="about.html"><b>ABOUT US</b></a> </li>
+                        
+        
+            </ul>
+        </nav> 
+        </div>
+        </header>
+         <!--homepage-->
+         <main>
+    
+            <div class="welcome-box">
+  <p class="welcome" > Welcome to your peaceful study space.</p></div>
+  
+  <p class="instruction" >Let’s begin by choosing a section — Planner, Journal, or Flashcards </p>
+  <!--timer-->
+   <section class="growth">
+            <h5><i>Meet your study partner!</i></h5>
+            <div class="fairy">
+                <img src="https://thumbs.dreamstime.com/b/cartoon-old-woman-magic-staff-book-fairy-tale-character-illustration-smiling-378138767.jpg" height="100" width="100"></div>
+                <div class="timer">
+                    <h6 class="countdown">25:00</h6>
+                     <button id="startBtn" class="stars" onclick="startTimer()"><b>Start Timer</b></button>
+                     </section>
+                     <audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<button onclick="toggleMusic()" class="music-btn">🎵 Toggle Music</button>
+
+            
+ </main>
+ 
+  <p class="page-quote"> “This is your time. Start gentle, start now.” </p>
+
+ 
+ <script>
+ function toggleMusic() {
+  const music = document.getElementById('bg-music');
+  if (music.paused) {
+    music.play();I
+  } else {
+    music.pause();
+  }
+}
+</script>
+<footer class="footer">
+  <p>© 2025 Rise & Revise. All rights reserved.</p>
+</footer>
+ <script src="scripthome.js"></script>
+ 
+</body>
+</html>

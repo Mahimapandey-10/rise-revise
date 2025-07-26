@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flashcards</title>
+    <link rel="stylesheet" href="styleflashcard.css">
+</head>
+<body class="bg">
+    <!--font style-->
+    <header>
+        <div class="flashcard">
+        <div class="flashcard-head">
+        <h4 >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrdIxuL5bDUBA_TAbScxKLBxiakEege0TGA&s" style="vertical-align: middle;" height="50px width=50px"><i> MY FLASHCARDS </i></h4>
+        </div>
+    </header>
+    <main>
+       <!--flashcards-->
+        <section >
+            
+            <div class="flashcard-box">
+                <input id="frontInput" type="text" placeholder="QUESTION/TOPIC">
+                
+                <div class="area">
+                <textarea id="backInput" type="text" placeholder="ANSWER"></textarea>
+            
+                <!-- <center><button onclick="addflashcard()"><b>ADD FLASHCARD</b></button></center> -->
+                 <center><button id="addBtn"><b>ADD FLASHCARD</b></button></center>
+
+            </div>
+            <div class="cardcontainer"></div>
+            </div>
+    </main>
+    <!-- Floating home button -->
+<a href="index.html" class="floating-nav">🏠</a>
+
+    <p class="page-quote"><i> “Every word you remember is a star in your sky of growth.”</i></p>
+
+<script src="scriptflashcard.js"></script>
+</body>
+</html>

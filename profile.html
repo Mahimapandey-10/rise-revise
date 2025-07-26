@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="stylepfp.css">
+</head>
+<!-- <body class="background">
+    <main>
+         <div class="container">
+        <div class="profile-header">
+        <h5 class="profile">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" style="vertical-align: middle;" height="30px" width="30px"><i><b> MY PROFILE</b></i>
+
+        </h5></div>
+        
+        <form class="form">
+            <label for="nameinput1">Name:</label>
+            <input type="text" id="nameinput1" placeholder="Enter your name">
+           
+            
+            <label for="nameinput2">Email:</label>
+            <input type="email" id="nameinput2" placeholder="Enter your mail-id">
+             
+            <label for="nameinput3">Username:</label>
+            <input type="text" id="nameinput3" placeholder="username">
+        
+            
+            <label for="nameinput4">Gender:</label>
+            <select id="gender">
+              <option value="" disabled selected>Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+           <option value="nonbinary">other</option>
+           
+            
+           </select>
+           
+           
+           <label for="dob">Date of Birth:</label>
+             <input type="date" id="dob">
+             <button class="create"><b>CREATE PROFILE</b></button>
+        </form>
+    </div>
+    </main>
+    
+<a href="index.html" class="floating-nav">🏠</a>
+
+    <p class="page-quote">🌼 “Celebrate your progress — even the quiet, unseen steps.”</p>
+
+<script src="scriptpfp.js"></script>
+</body> -->
+<body class="background">
+    <main>
+        <div class="container" id="profileContainer">
+            <div class="profile-header">
+                <h5 class="profile">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                        style="vertical-align: middle;" height="30px" width="30px">
+                    <i><b> MY PROFILE</b></i>
+                </h5>
+            </div>
+
+            <!-- Profile Form -->
+            <form class="form" id="profileForm">
+                <label for="profilePic">Profile Picture:</label>
+                <input type="file" id="profilePic" accept="image/*">
+
+                <label for="nameinput1">Name:</label>
+                <input type="text" id="nameinput1" placeholder="Enter your name">
+
+                <label for="nameinput2">Email:</label>
+                <input type="email" id="nameinput2" placeholder="Enter your mail-id">
+
+                <label for="nameinput3">Username:</label>
+                <input type="text" id="nameinput3" placeholder="username">
+
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="" disabled selected>Select</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="nonbinary">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+
+                <button type="submit" class="create"><b>CREATE PROFILE</b></button>
+            </form>
+
+            <!-- Profile Display Section (Initially Hidden) -->
+            <div id="profileDisplay" style="display:none; text-align:center;">
+                <img id="displayPic" src="" alt="Profile Picture" style="width:100px; height:100px; border-radius:50%; margin-bottom:10px;">
+                <h2 id="displayName"></h2>
+                <p id="displayEmail"></p>
+                <p id="displayUsername"></p>
+                <p id="displayGender"></p>
+                <p id="displayDob"></p>
+                <button id="editProfile" class="create">Edit Profile</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating home button -->
+    <a href="index.html" class="floating-nav">🏠</a>
+
+    <p class="page-quote">🌼 “Celebrate your progress — even the quiet, unseen steps.”</p>
+
+    <script src="scriptpfp.js"></script>
+</body>
+
+</html>

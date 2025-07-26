@@ -1,0 +1,408 @@
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+.Home,h5{
+     font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, skyblue, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 280px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+/* animation: typing 2s steps(20, end) forwards */
+
+a{
+  text-decoration: none;
+}
+.content{
+  background-color: white;
+}
+li{
+  display:inline;
+  color:white;
+  justify-content: center;
+  gap: 40px;  
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+nav a {
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  color: blue;
+  padding: 10px 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+
+body.homepage{
+  
+  background-image: url(https://assets.designtemplate.io/Dreamy%20Pink%20Gradient%20Background%20for%20Romantic%20Event%20Presentation.webp);
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome{
+  
+  font-size:30px;
+  font-style: oblique;
+  text-align: center;
+  margin: 30px;
+  background: linear-gradient(to right, skyblue, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instruction{
+ font-size:20px;
+  font-style:italic;
+  text-align: center;
+  margin:0;
+  
+  }
+.growth {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.growth h5 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.fairy img {
+  margin:0;
+}
+
+.timer {
+  margin:0;
+}
+
+.growth h6{
+  margin-top:5px;
+  
+}
+.stars{
+  margin:0;
+}
+.countdown{
+  font-size: 15px;
+  padding:0;
+  margin: 9px;
+  transform: scale(2);
+}
+/* ✨ Floating fairy animation */
+.fairy img {
+  animation: idleFloat 3s ease-in-out infinite;
+}
+
+@keyframes idleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ✨ Countdown glow pulse */
+.countdown.running {
+  animation: pulseGlow 1s infinite;
+  color: #20c997;
+  font-weight: bold;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 5px #20c997;
+  }
+  50% {
+    text-shadow: 0 0 20px #20c997;
+  }
+  100% {
+    text-shadow: 0 0 5px #20c997;
+  }
+}
+
+/* ✨ Start button enhancements */
+.stars {
+  background-color: #fff;
+  border: 2px solid #20c997;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #20c997;
+  cursor: pointer;
+  transition: 0.3s ease, width 0.3s ease;
+
+  margin: 10px;
+}
+
+.stars:hover {
+  background-color: #20c997;
+  color: white;
+  transform: scale(1.05);
+  width:150px;
+}
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: pink;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.music-btn:hover {
+  background-color: purple;
+  color:white;
+}
+.page-quote {
+  /* text-align: center; */
+  font-size: 1.2rem;
+  font-style: italic;
+  color: darkblue; /* soft magical purple */
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+  animation: fadeIn 2s ease-in;
+  margin-left: 35%;
+  position: relative;
+  top: 20px;
+}
+
+/* Optional animation for soft entry */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 0.9; transform: translateY(0); }
+}
+.footer {
+  text-align: center;
+  padding: 0px 0;
+  background: #f8f9fa; /* light, neutral background */
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  
+}
+
+.footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.logo-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  animation: zoomIn 1s ease-out;
+}
+
+.site-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #f3d2b2;
+  box-shadow: 0 0 15px rgba(255, 195, 143, 0.6);
+  background-color: white;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom on hover (optional) */
+.site-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Entry animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.site-logo {
+  width: 100px;
+  height: 100px;
+  /* rest remains the same */
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+}
+
+.site-logo {
+  width: 145px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 223, 186, 0.6);
+}
+
+.navbar {
+  margin-top: 90px; /* Push navbar below the logo */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #7c4dff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.navbar li a:hover {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.5);
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .navbar {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navbar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar li a {
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .welcome, .instruction {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  .growth {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .fairy img {
+    width: 70px;
+    height: auto;
+  }
+
+  .countdown {
+    transform: scale(1.5);
+    font-size: 18px;
+  }
+
+  .stars {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    width: auto;
+  }
+
+  .page-quote {
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    top: 10px;
+  }
+
+  .music-btn {
+    bottom: 15px;
+    right: 15px;
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .countdown {
+    transform: scale(1.2);
+  }
+
+  .stars {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .music-btn {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
